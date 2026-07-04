@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshal Gawali | UI/UX Designer Portfolio</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5.3.0 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --hyundai-blue: rgba(43, 4, 239, 0.831);
+            --hyundai-accent: #270dd4;
+            --dark-text: #1C1C1C;
+            --light-bg: #F8F9FA;
+        }
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+            background-color: #FFFFFF;
+        }
+
+        /* Color Utility Refinements */
+        .text-hyundai {
+            color: var(--hyundai-blue);
+        }
+
+        .bg-hyundai {
+            background-color: var(--hyundai-blue);
+        }
+
+        .btn-hyundai {
+            background-color: var(--hyundai-blue);
+            color: #FFFFFF;
+            font-weight: 500;
+            border: 2px solid var(--hyundai-blue);
+            transition: all 0.3s ease;
+        }
+
+        .btn-hyundai:hover {
+            background-color: transparent;
+            color: var(--hyundai-blue);
+        }
+
+        .btn-outline-hyundai {
+            border: 2px solid var(--hyundai-blue);
+            color: var(--hyundai-blue);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-hyundai:hover {
+            background-color: var(--hyundai-blue);
+            color: #FFFFFF;
+        }
+
+        /* Section Spacing */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #ECECEC;
+        }
+
+        .custom-space {
+            margin-top: 6rem !important;
+            margin-bottom: 6rem !important;
+        }
+
+        /* Card Configurations */
+        .custom-card {
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            background-color: #FFFFFF;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 44, 95, 0.05);
+        }
+
+        .featured-card {
+            border: 2px solid var(--hyundai-blue) !important;
+            box-shadow: 0 4px 15px rgba(0, 44, 95, 0.06);
+        }
+
+        /* Timeline Graphics */
+        .timeline-wrapper {
+            border-left: 3px solid var(--hyundai-blue);
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -31px;
+            top: 5px;
+            background: var(--hyundai-blue);
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Subtle Recruiter-Friendly Viewport Animations */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* body{
+            text-align: justify;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- Global Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-hyundai fs-4" href="#">Portfolio</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium gap-1">
+
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Showcase Section -->
+    <header id="home" class="d-flex align-items-center bg-light border-bottom" style="min-height: 75vh;">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-7 text-center text-md-start">
+
+                    <div class="container py-5 text-center my-5 custom-space">
+                        <h1 class="display-3 fw-bold text-hyundai mb-2">Harshal Gawali</h1>
+                        <h3 class="fw-semibold text-secondary mb-3">Software Developer | Aspiring UI/UX Designer</h3>
+                        <p class="lead text-muted mx-auto mb-5" style="max-width: 600px;">
+                            "Passionate about developing modern web applications while creating intuitive and responsive
+                            user experiences through thoughtful interface design."
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#contact" class="btn btn-hyundai btn-lg px-4 shadow-sm">Contact Me</a>
+                            <a href="#" class="btn btn-outline-hyundai btn-lg px-4"><i
+                                    class="fas fa-file-pdf me-2"></i>Download Resume</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-5 text-center mt-5 mt-md-0">
+                    <img src="portfolioPic.png" class="rounded-4 shadow-lg img-fluid my-5 border border-5 shadow-sm"
+                        style="width: 500px; height: 500px; aspect-ratio: 1; object-fit: cover;"
+                        alt="UI/UX Prototyping Workspace">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- About Me Section -->
+    <section id="about" class="fade-in-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-hyundai mb-4">About Me</h2>
+                    <p class="fs-5 text-secondary leading-relaxed " style="text-align: justify;">
+                        Software Developer with a passion for crafting intuitive, user-centered digital experiences. I
+                        enjoy combining modern web development with thoughtful interface design to build applications
+                        that are not only functional but also clean, responsive, and engaging. Constantly exploring
+                        UI/UX principles, I strive to create products that solve real user problems through simplicity
+                        and usability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Category Matrix Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light fade-in-section">
+        <div class="container">
+            <h2 class="fw-bold text-hyundai text-center mb-5">Skills</h2>
+
+            <div class="row g-4">
+
+                <!-- UI/UX -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="text-hyundai fs-1 mb-3">
+                            <i class="fas fa-bezier-curve"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">UI/UX</h5>
+                        <p class="text-muted small mb-0">
+                            Figma, Wireframing, Prototyping, Responsive Web Design, UI Component Development
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="text-hyundai fs-1 mb-3">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Frontend</h5>
+                        <p class="text-muted small mb-0">
+                            HTML5, CSS3, Bootstrap, JavaScript, React.js
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="text-hyundai fs-1 mb-3">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Programming</h5>
+                        <p class="text-muted small mb-0">
+                            Java, JavaScript, Python, C++, C
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="text-hyundai fs-1 mb-3">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Backend</h5>
+                        <p class="text-muted small mb-0">
+                            Spring Boot, REST APIs, JDBC
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="text-hyundai fs-1 mb-3">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Databases</h5>
+                        <p class="text-muted small mb-0">
+                            PostgreSQL, MySQL, MongoDB, SQLite, H2, CRUD Operations, Data Modeling
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="text-hyundai fs-1 mb-3">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Tools</h5>
+                        <p class="text-muted small mb-0">
+                            Git, GitHub, VS Code, IntelliJ IDEA, Postman, Eclipse Ide
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section id="projects" class="fade-in-section">
+        <div class="container">
+            <h2 class="fw-bold text-hyundai text-center mb-2">Projects</h2>
+            <p class="text-muted text-center mb-5">Click 'View Details' for product architecture frameworks.</p>
+
+            <div class="row g-4">
+                <!-- FEATURED PROJECT 1: FinGenius -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card featured-card h-100 overflow-hidden">
+                        <div class="bg-secondary text-white text-center py-5 bg-opacity-10 border-bottom position-relative"
+                            style="min-height: 160px;">
+                            <i
+                                class="fas fa-wallet display-4 text-hyundai position-absolute top-50 start-50 translate-middle"></i>
+                            <span class="badge bg-hyundai position-absolute top-0 end-0 m-3 fw-bold">
+                                AWARD-WINNING
+                            </span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-hyundai">
+                                    FinGenius – AI-Powered Personal Finance Platform
+                                </h5>
+
+                                <p class="card-text text-muted small">
+                                    <strong>Research-based</strong> AI-powered personal finance platform featuring
+                                    <strong>expense tracking</strong>, <strong>budgeting</strong>, <strong>receipt
+                                        scanning</strong>, and interactive dashboards. Served as <strong>Team
+                                        Lead</strong>. <strong>Top 50</strong> at NEF Innovation Awards 2026.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-secondary border">Next.js 15</span>
+                                    <span class="badge bg-light text-secondary border">React 19</span>
+                                    <span class="badge bg-light text-secondary border">PostgreSQL</span>
+                                    <span class="badge bg-light text-secondary border">Prisma ORM</span>
+                                    <span class="badge bg-light text-secondary border">Google Gen AI</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <button class="btn btn-hyundai btn-sm px-3"
+                                    onclick="openDetailsModal('FinGenius')">
+                                    View Details
+                                </button>
+                            
+                                <a href="https://drive.google.com/file/d/1--_WVVn67MYLnsB6PMnyfi1fWeKSIToT/view"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-play-circle me-1"></i> Demo
+                                </a>
+                            
+                                <a href="https://drive.google.com/file/d/15gCCREypDglU36v8R23oz0A1SYWBhy4N/view"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-file-alt me-1"></i> Research Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FEATURED PROJECT 2: Modern SaaS Landing Page -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card featured-card h-100 overflow-hidden">
+                        <div class="bg-secondary text-white text-center py-5 bg-opacity-10 border-bottom position-relative"
+                            style="min-height: 160px;">
+                            <i
+                                class="fas fa-window-maximize display-4 text-hyundai position-absolute top-50 start-50 translate-middle"></i>
+                            <span
+                                class="badge bg-hyundai position-absolute top-0 end-0 m-3 fw-bold tracking-wider">FEATURED
+                                DESIGN</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-hyundai">Modern SaaS Landing Page</h5>
+
+                                <p class="card-text text-muted small">
+                                    <strong>Responsive</strong> SaaS landing page built from a <strong>Figma
+                                        design</strong> with pixel-perfect implementation, interactive UI components,
+                                    and a modern user experience.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-secondary border">Figma</span>
+                                    <span class="badge bg-light text-secondary border">HTML5</span>
+                                    <span class="badge bg-light text-secondary border">CSS3</span>
+                                    <span class="badge bg-light text-secondary border">Bootstrap 5</span>
+                                    <span class="badge bg-light text-secondary border">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <button class="btn btn-hyundai btn-sm px-3"
+                                    onclick="openDetailsModal('SaaS')">
+                                    View Details
+                                </button>
+                            
+                                <a href="https://gawaliharshal.github.io/Modern-SaaS-Landing-Page-with-Interactive-Features/"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                                </a>
+                            
+                                <a href="https://github.com/gawaliHarshal/Modern-SaaS-Landing-Page-with-Interactive-Features"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fab fa-github me-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FEATURED PROJECT 3: E-Commerce Web Application -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card featured-card h-100 overflow-hidden">
+                        <div class="bg-secondary text-white text-center py-5 bg-opacity-10 border-bottom position-relative"
+                            style="min-height: 160px;">
+                            <i
+                                class="fas fa-shopping-bag display-4 text-hyundai position-absolute top-50 start-50 translate-middle"></i>
+                            <span
+                                class="badge bg-hyundai position-absolute top-0 end-0 m-3 fw-bold tracking-wider">FEATURED
+                                FULL-STACK</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-hyundai">E-Commerce Web Application</h5>
+
+                                <p class="card-text text-muted small">
+                                    <strong>Full-stack</strong> e-commerce application featuring product management,
+                                    stock-aware shopping cart, category filtering, and responsive user interfaces
+                                    powered by REST APIs.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-secondary border">React</span>
+                                    <span class="badge bg-light text-secondary border">Spring Boot</span>
+                                    <span class="badge bg-light text-secondary border">REST API</span>
+                                    <span class="badge bg-light text-secondary border">H2 Database</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <button class="btn btn-hyundai btn-sm px-3"
+                                    onclick="openDetailsModal('Ecommerce')">
+                                    View Details
+                                </button>
+                            
+                                <a href="https://github.com/gawaliHarshal/springboot-react-ecommerce"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fab fa-github me-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: Order Management System -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 overflow-hidden">
+                        <div class="bg-light text-center py-5 border-bottom position-relative"
+                            style="min-height: 160px;">
+                            <i
+                                class="fas fa-boxes-stacked fs-1 text-muted position-absolute top-50 start-50 translate-middle"></i>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-dark">Order Management Dashboard</h5>
+
+                                <p class="card-text text-muted small">
+                                    <strong>Full-stack</strong> order management dashboard with live order tracking,
+                                    responsive UI, and REST API integration powered by Spring Boot and MongoDB.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-secondary border">Spring Boot</span>
+                                    <span class="badge bg-light text-secondary border">MongoDB</span>
+                                    <span class="badge bg-light text-secondary border">REST APIs</span>
+                                    <span class="badge bg-light text-secondary border">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <button class="btn btn-hyundai btn-sm px-3"
+                                    onclick="openDetailsModal('OrderSystem')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: Gesture Virtual Mouse -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 overflow-hidden">
+                        <div class="bg-light text-center py-5 border-bottom position-relative"
+                            style="min-height: 160px;">
+                            <i
+                                class="fas fa-hand-pointer fs-1 text-muted position-absolute top-50 start-50 translate-middle"></i>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-dark">AI Hand Gesture Virtual Mouse</h5>
+                                <p class="card-text text-muted small">Real-time interaction engineering framework
+                                    mapping camera-tracked landmarks to digital desktop workflow spaces without physical
+                                    hardware.</p>
+                                <div class="mb-3"><span class="badge bg-light text-secondary border">OpenCV</span> <span
+                                        class="badge bg-light text-secondary border">MediaPipe</span> <span
+                                        class="badge bg-light text-secondary border">PyAutoGUI</span></div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <button class="btn btn-hyundai btn-sm px-3"
+                                    onclick="openDetailsModal('GestureMouse')">
+                                    View Details
+                                </button>
+                            
+                                <a href="https://github.com/gawaliHarshal/Virtual-Mouse"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fab fa-github me-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 6: IoT Smart Home System -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card h-100 overflow-hidden">
+                        <div class="bg-light text-center py-5 border-bottom position-relative"
+                            style="min-height: 160px;">
+                            <i
+                                class="fas fa-house-laptop fs-1 text-muted position-absolute top-50 start-50 translate-middle"></i>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-dark">IoT Home Automation System</h5>
+                                <p class="card-text text-muted small">Wireless hardware interaction engineering project
+                                    parsing serial switching streams to safely manage real-world infrastructure relays.
+                                </p>
+                                <div class="mb-3"><span class="badge bg-light text-secondary border">Embedded C</span>
+                                    <span class="badge bg-light text-secondary border">Arduino Uno</span> <span
+                                        class="badge bg-light text-secondary border">HC-05</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <button class="btn btn-hyundai btn-sm px-3"
+                                    onclick="openDetailsModal('IoTHome')">
+                                    View Details
+                                </button>
+                            
+                                <a href="https://drive.google.com/drive/folders/1PRXXm2vrKbThXyYzr8jdVNhpZk-ywRgR"
+                                   target="_blank"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-folder-open me-1"></i> Demo & Docs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline Section -->
+    <section id="experience" class="bg-light table-responsive fade-in-section">
+        <div class="container">
+            <h2 class="fw-bold text-hyundai text-center mb-5">Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="timeline-wrapper">
+
+                        
+
+                        <!-- Timeline Record 1 -->
+                        <div class="timeline-item">
+                            <div class="card border-0 shadow-sm p-4 rounded-3">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <h5 class="fw-bold text-hyundai mb-0">Full Stack Developer Intern</h5>
+                                    <span class="badge bg-secondary-subtle text-secondary fw-semibold">Dec 2025 – Jun
+                                        2026</span>
+                                </div>
+                                <h6 class="text-dark fw-medium mb-3">YTPS HR India Pvt. Ltd.</h6>
+<ul class="small text-muted ps-3 mb-0">
+    <li class="mb-1">
+        Designed and developed a <strong>sample responsive corporate landing page</strong> with modern UI, clean layouts, and an engaging user experience.
+        <a href="https://gawaliharshal.github.io/YTPS/" target="_blank">View Sample</a>
+    </li>
+
+    <li class="mb-1">
+        Built a Java MVC-based HR Consultancy web application with modules for candidate registration, job applications, and admin management.
+    </li>
+
+    <li class="mb-1">
+        Implemented authentication, session management, CRUD operations, and MySQL database integration using Servlets, JSP, and JDBC.
+    </li>
+
+    <li>
+        Collaborated with the development team to deliver responsive interfaces, improve usability, and implement production-ready features.
+    </li>
+</ul>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Record 2 -->
+                        <div class="timeline-item">
+                            <div class="card border-0 shadow-sm p-4 rounded-3">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <h5 class="fw-bold text-hyundai mb-0">Web Developer Intern</h5>
+                                    <span class="badge bg-secondary-subtle text-secondary fw-semibold">Jan 2026 – Jun
+                                        2026</span>
+                                </div>
+                                <h6 class="text-dark fw-medium mb-3">PrimaThink Technologies Pvt. Ltd.</h6>
+                                <ul class="small text-muted ps-3 mb-0">
+                                    <li class="mb-1">Developed responsive user interfaces for a robust Learning
+                                        Management System (LMS) workflow framework.</li>
+                                    <li class="mb-1">Analyzed interface friction to drastically improve complex internal
+                                        multi-role user workflows.</li>
+                                    <li class="mb-1">Collaborated dynamically with cross-functional frontend and backend
+                                        systems execution teams.</li>
+                                    <li>Built intuitive data dashboards ensuring fast component render tracking
+                                        operations.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Metrics Section -->
+    <section id="education" class="fade-in-section">
+        <div class="container">
+            <h2 class="fw-bold text-hyundai text-center mb-5">Education</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- University Tracking Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div
+                        class="card custom-card h-100 p-4 border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-hyutter text-hyundai fw-bold small tracking-wider text-uppercase">2022 –
+                                2026</span>
+                            <h5 class="fw-bold text-dark mt-1 mb-2">B.Tech in Information Technology</h5>
+                            <p class="text-muted small mb-3">G H Raisoni College of Engineering and Management, Pune
+                                (SPPU)</p>
+                        </div>
+                        <div class="pt-3 border-top">
+                            <h6 class="fw-bold text-hyundai mb-0">CGPA: 7.91 / 10</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- HSC Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div
+                        class="card custom-card h-100 p-4 border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-hyundai fw-bold small tracking-wider text-uppercase">Completed March
+                                2022</span>
+                            <h5 class="fw-bold text-dark mt-1 mb-2">Higher Secondary Certificate (HSC)</h5>
+                            <p class="text-muted small mb-3">H.P.T. Arts & R.Y.K. Science College, Nashik</p>
+                        </div>
+                        <div class="pt-3 border-top">
+                            <h6 class="fw-bold text-hyundai mb-0">Percentage: 64.17%</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- SSC Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div
+                        class="card custom-card h-100 p-4 border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-hyundai fw-bold small tracking-wider text-uppercase">Completed March
+                                2020</span>
+                            <h5 class="fw-bold text-dark mt-1 mb-2">Secondary School Certificate (SSC)</h5>
+                            <p class="text-muted small mb-3">Madhyamik Vidyalaya Untwadi (Pethe), Nashik</p>
+                        </div>
+                        <div class="pt-3 border-top">
+                            <h6 class="fw-bold text-hyundai mb-0">Percentage: 94%</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Verification Matrix Section -->
+    <section id="certifications" class="bg-light fade-in-section">
+        <div class="container">
+            <h2 class="fw-bold text-hyundai text-center mb-5">Certifications & Achievements</h2>
+            <div class="row g-4">
+                <!-- Achievement 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card p-4 h-100 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="text-warning fs-3"><i class="fas fa-trophy"></i></span>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1">FinGenius – NEF Innovation Top 50 Award</h6>
+                                <p class="text-muted small mb-0">Recognized among the Top 50 innovations at the NEF
+                                    Innovation Awards 2026 framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card p-4 h-100 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="text-hyundai fs-3"><i class="fas fa-scroll"></i></span>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1">FinGenius – ICITSC Research Presentation</h6>
+                                <p class="text-muted small mb-0">Research paper presented at PCCOE Pune and submitted
+                                    for SCITEPRESS proceedings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card p-4 h-100 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="text-hyundai fs-3"><i class="fas fa-building-columns"></i></span>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1">Goldman Sachs Virtual Experience Program</h6>
+                                <p class="text-muted small mb-0">Completed the comprehensive Software Engineering
+                                    Virtual Experience track (2025).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card p-4 h-100 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="text-hyundai fs-3"><i class="fab fa-google"></i></span>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1">Google Cloud Generative AI Frameworks</h6>
+                                <p class="text-muted small mb-0">Official introduction and core model architectures
+                                    completion track (2025).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card p-4 h-100 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="text-hyundai fs-3"><i class="fas fa-laptop-code"></i></span>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1">Smart India Hackathon (SIH) Participant</h6>
+                                <p class="text-muted small mb-0">Earned official internal institute appreciation records
+                                    for collaborative feature engineering (2023).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card p-4 h-100 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="text-hyundai fs-3"><i class="fas fa-cubes"></i></span>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1">Adobe India Hackathon Track</h6>
+                                <p class="text-muted small mb-0">Completed Round 1 execution testing evaluation matrices
+                                    under Team DREAMERS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communication & Contact Form Section -->
+    <section id="contact" class="fade-in-section">
+        <div class="container">
+            <h2 class="fw-bold text-hyundai text-center mb-5">Contact</h2>
+            <div class="row g-5">
+                <!-- Matrix Channels -->
+                <div class="col-md-3">
+
+                </div>
+                <div class=" col-md-6 d-flex flex-column justify-content-between border-0 shadow-sm ">
+                    <div>
+                        <h4 class="fw-bold text-dark mb-3">Let's connect</h4>
+                        <p class="text-muted mb-4">Feel free to reach out for design documentation analysis, interactive
+                            interface optimization, or application testing parameters.</p>
+
+                        <div class="d-flex align-items-center mb-3 gap-3">
+                            <span class="text-hyundai fs-4"><i class="fas fa-envelope"></i></span>
+                            <span class="text-secondary small fw-medium">harshalgawali333@gmail.com</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 gap-3">
+                            <span class="text-hyundai fs-4"><i class="fas fa-phone"></i></span>
+                            <span class="text-secondary small fw-medium">+91-9172323710</span>
+                        </div>
+                    </div>
+                    <!-- Unified Brand Anchors -->
+                    <div class="fs-3 d-flex gap-4 mb-4">
+                        <a href="https://www.linkedin.com/in/harshal-tanaji-gawali/" target="_blank" class="text-hyundai" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/gawaliHarshal" target="_blank" class="text-dark" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/gawali_harshal/" target="_blank" class="text-danger" title="LeetCode"><i
+                                class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <!-- Dynamic Input Box Component -->
+                <!-- <div class="col-md-7">
+                    <div class="card border-0 p-4 bg-light rounded-3 shadow-sm">
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control border-secondary-subtle py-2 px-3"
+                                        placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control border-secondary-subtle py-2 px-3"
+                                        placeholder="Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-secondary-subtle py-2 px-3" rows="4"
+                                        placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-hyundai px-4 py-2 shadow-sm w-100">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Corporate Footer Component -->
+    <footer class="bg-dark text-white-50 py-4 border-top border-secondary">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center small">
+            <p class="mb-0">Designed & Developed by Harshal Gawali © 2026</p>
+            <div class="d-flex gap-3">
+                <a href="#home" class="text-white-50 text-decoration-none">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC USER EXPERIENCE MODAL SYSTEM -->
+    <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-3">
+                <div class="modal-header bg-hyundai text-white py-3 border-0">
+                    <h5 class="modal-title fw-bold" id="modalProjectTitle">Project Architectural Frame</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-submit="modal"
+                        onclick="closeDetailsModal()"></button>
+                </div>
+                <div class="modal-body p-4" id="modalProjectBody">
+                    <!-- Javascript populates data tables cleanly here -->
+                </div>
+                <div class="modal-footer border-top bg-light py-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary fw-semibold"
+                        onclick="closeDetailsModal()">Close Specification</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CORE INTERACTION ENGINEERING AND ARCHITECTURE INTERPRETER SCRIPT -->
+    <script>
+        // Project Specifications Object Matrix for Recruitment Scannability
+        const projectData = {
+            FinGenius: {
+                title: "FinGenius – AI-Powered Personal Finance Platform",
+
+                desc: "Research-based full-stack personal finance platform that simplifies money management through AI-powered receipt scanning, automated expense tracking, budgeting, financial goal management, and interactive dashboards.",
+
+                points: [
+                    "Implemented AI-powered receipt scanning to automate transaction entry and reduce manual bookkeeping.",
+                    "Contributed to backend development using PostgreSQL, Prisma ORM, and Next.js full-stack architecture.",
+                    "Served as Team Lead, coordinating Agile development and project planning.",
+                    "Presented at ICITSC 2025 and recognized among the Top 50 projects at the NEF Innovation Awards 2026."
+                ],
+
+                tech: "Next.js 15, React 19, PostgreSQL, Prisma ORM, Clerk, Google Generative AI, Tailwind CSS"
+            },
+            SaaS: {
+                title: "Modern SaaS Landing Page",
+
+                desc: "Responsive SaaS landing page developed from a Figma design, focusing on clean UI, responsive layouts, and an engaging user experience.",
+
+                points: [
+                    "Converted a high-fidelity Figma design into a pixel-perfect, fully responsive website.",
+                    "Built interactive components including custom video controls, testimonial slider, newsletter form, and contact modal.",
+                    "Implemented reusable UI sections with semantic HTML, Bootstrap 5, and modern CSS for consistency and maintainability."
+                ],
+
+                tech: "Figma, HTML5, CSS3, Bootstrap 5, JavaScript"
+            },
+            Ecommerce: {
+                title: "Full Stack E-Commerce Web Application",
+
+                desc: "A full-stack e-commerce platform with product management, stock-aware shopping cart, category filtering, image handling, and secure REST API integration.",
+
+                points: [
+                    "Developed a responsive React frontend integrated with Spring Boot REST APIs.",
+                    "Implemented product management with CRUD operations, image upload, and category-based filtering.",
+                    "Built a stock-aware shopping cart with automatic inventory updates and out-of-stock handling."
+                ],
+
+                tech: "React, Spring Boot, Spring Data JPA, REST APIs, H2 Database, Bootstrap"
+            },
+            OrderSystem: {
+                title: "Spring Boot MongoDB Order Management Dashboard",
+
+                desc: "Full-stack order management dashboard for retrieving and managing live order data through Spring Boot REST APIs and MongoDB.",
+
+                points: [
+                    "Developed REST APIs using Spring Boot and Spring Data MongoDB.",
+                    "Designed MongoDB document models with embedded documents and @DBRef relationships.",
+                    "Built a responsive dashboard using HTML, CSS, and JavaScript to display live order data."
+                ],
+
+                tech: "Java, Spring Boot, Spring Data MongoDB, MongoDB, HTML, CSS, JavaScript"
+            },
+            GestureMouse: {
+                title: "AI-Based Spatial Gesture Tracking Interface",
+                desc: "A hardware-free gesture recognition engine mapping spatial input configurations directly to system interaction flows.",
+                points: [
+                    "Parsed live webcam streams using real-time frame evaluation metrics.",
+                    "Designed custom interaction rules utilizing vector proximity calculations.",
+                    "Applied signal smoothing techniques to eliminate hardware tracking jitter."
+                ],
+                tech: "Python, OpenCV, MediaPipe Framework, Automation Scripts"
+            },
+            IoTHome: {
+                title: "IoT Home Automation Hardware Platform",
+                desc: "A robust wireless electrical hardware interface system processing real-time switching streams safely.",
+                points: [
+                    "Programmed embedded microcontrollers using highly optimized serial tracking code.",
+                    "Structured low-latency communication networks over local wireless signals.",
+                    "Built physical isolation protective boundaries for clean hardware relays."
+                ],
+                tech: "Embedded C, Arduino Systems, Serial Modules, Relays"
+            }
+        };
+
+        let detailsModal = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Instantiate the Bootstrap Modal safely using native API
+            detailsModal = new bootstrap.Modal(document.getElementById('projectDetailsModal'));
+
+            // Elegant Scroll Spy Observer for Subtle Animations
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observerOptions = { threshold: 0.15 };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+
+        // Modal Lifecycle Event Handlers
+        function openDetailsModal(key) {
+            const data = projectData[key];
+            if (!data) return;
+
+            document.getElementById('modalProjectTitle').innerText = data.title;
+
+            let pointsHTML = '';
+            data.points.forEach(pt => {
+                pointsHTML += `<li class="mb-2 text-secondary">${pt}</li>`;
+            });
+
+            document.getElementById('modalProjectBody').innerHTML = `
+                <p class="fw-medium text-dark mb-3">${data.desc}</p>
+                <h6 class="fw-bold text-hyundai mb-2">Core UX & Architecture Milestones:</h6>
+                <ul class="small ps-3 mb-4">${pointsHTML}</ul>
+                <div class="p-3 bg-light border rounded-3">
+                    <span class="small fw-bold text-hyundai d-block mb-1">Technologies Utilized:</span>
+                    <code class="text-dark small">${data.tech}</code>
+                </div>
+            `;
+
+            detailsModal.show();
+        }
+
+        function closeDetailsModal() {
+            if (detailsModal) detailsModal.hide();
+        }
+
+        // Form Submission Interaction Simulation
+        // function handleFormSubmit(event) {
+        //     event.preventDefault();
+        //     alert("Thank you, Harshal! Your submission has been captured simulated inside the interface framework pipeline.");
+        //     document.getElementById('contactForm').reset();
+        // }
+    </script>
+</body>
+
+</html>
